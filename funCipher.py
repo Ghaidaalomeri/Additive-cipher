@@ -64,15 +64,15 @@ def on_cryptanalysis():
     else:
         label_result.config(text=key)
 
-# Create the main window
+
 root = tk.Tk()
 root.title("Cryptosystem")
 
-# Set the background color and window size
+
 root.config(bg='white')
 root.geometry("500x400")
 
-# Labels and input fields
+
 label_plaintext = tk.Label(root, text="Enter text:", bg='white')
 label_plaintext.pack(pady=5)
 
@@ -91,7 +91,7 @@ label_key.pack(pady=5)
 entry_key = tk.Entry(root, width=50)
 entry_key.pack(pady=5)
 
-# Buttons
+
 button_encrypt = tk.Button(root, text="Encrypt", command=on_encrypt, bg='navy', fg='white', width=20)
 button_encrypt.pack(pady=5)
 
@@ -101,9 +101,9 @@ button_decrypt.pack(pady=5)
 button_cryptanalysis = tk.Button(root, text="Cryptanalysis", command=on_cryptanalysis, bg='navy', fg='white', width=20)
 button_cryptanalysis.pack(pady=5)
 
-# Result label
 label_result = tk.Label(root, text="", bg='white')
 label_result.pack(pady=10)
 
-# Run the GUI
+
+
 root.mainloop()
